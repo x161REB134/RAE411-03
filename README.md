@@ -6,4 +6,4 @@ Week 3 assignment for course RAE411
 ### From the created data JSON file, JS is used to work with this data - Createing 2 graphs (Each graph has its own JS file)
 ### HTML is used to display the data and graphs. Decied to create seperate files, so that the code is easier to understand and see which code is responsible for what. 
 
-# Screen shot of final index.html version executed uploaded as capture.png
+# Screenshot of final index.html version executed uploaded as capture.png
