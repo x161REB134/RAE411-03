@@ -1,0 +1,43 @@
+<!-- https://4v9r83qfo4.execute-api.eu-central-1.amazonaws.com/dev -->
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+    <div class="mypanel"></div>
+
+    <script>
+    $.getJSON('data.json', function(data) {
+        
+        var text = `Course: ${data.course}<br>
+                    Course Name: ${data.courseName}<br>
+                    Year released: ${data.releaseYear}<br>
+                    Course status: ${data.courseActive}<br>
+                    Dropped Students: ${data.droppedStudents}<br>
+                    Date: ${data.date}<br>
+                    data: ${data.data}<br>
+                    A scores: ${data.scores.a}<br>
+                    B scores: ${data.scores.b}<br>
+                    C scores: ${data.scores.c}`
+                    
+        
+        $(".mypanel").html(text);
+    });
+    </script>
+
+
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<h1>Scores graph </h1>
+<div id="my_dataviz"></div>
+<script src="scores_graph.js"></script>
+
+<h1>Data graph </h1>
+<div id="my_dataviz2"></div>
+<script src="data_graph.js"></script>
+
+</body>
+</html>
